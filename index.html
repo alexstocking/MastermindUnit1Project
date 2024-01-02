@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">MASTERMIND</h1>
+    </header>
+    <main id="mainholder">
+        <div id="gridholder">
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+            <div class="row">
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+                <div class="grid"></div>
+            </div>
+
+        </div>
+        <div id="colorbtnholder"> 
+            <div id="colorholder">
+                <button class="color" id="red"></button>
+                <button class="color" id="aqua"></button>
+                <button class="color" id="yellow"></button>
+                <button class="color" id="green"></button>
+                <button class="color" id="pink"></button>
+                <button class="color" id="purple"></button>
+            </div>
+            <h3 id="instructions">
+                Generate a secret code and then try to guess it!<br>
+                A colour that is both correct and in the right place will have a tick.<br>
+                A colour that is present in the code, but in an incorrect position will have a dash.<br>
+                A colour that isn't present anywhere in the code will have a cross.
+                <br>
+                You have 10 guesses! Click on the colours above to start cracking the code!
+            </h3>
+            <h3 id="congrats" class="hidden">You have cracked the code, congratulations!</h3>
+            <h3 id="gameover" class="hidden">Game Over!</h3>
+            <div id="btnholder">
+                <button id="gensecretnumber">Lets get started!</button>
+                <h3 id="codegenmessage" class="hidden"> 
+                    Code generated!
+                </h3>
+                <button id="restartrow" class="hidden">Clear Row</button>
+                <button id="guess" class="hidden">Guess Code!</button>
+                <button id="playagain" class="hidden">Play again!</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
